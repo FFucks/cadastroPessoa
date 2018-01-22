@@ -1,0 +1,10 @@
+{% extends 'index.njk' %}
+
+{% block content %}
+
+<div class="ui list">
+    {% for pessoa in listaPessoas %}
+    <div class="item">{{ pessoa.name }}</div>
+    {% endfor %}
+</div>
+{% endblock %}
